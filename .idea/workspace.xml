@@ -4,9 +4,6 @@
     <list default="true" id="015c1236-7276-4123-918d-5bd49ccf6fa6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ativi1/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ativi1/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ativi1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ativi1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ativi1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ativi1/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atividade1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/atividade1/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
