@@ -1,4 +1,5 @@
 {% load bootstrap4 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +7,19 @@
     <title>Contato</title>
     {% bootstrap_css %}
 </head>
+<!--
 <body>
    <div class="container">
    <h1>Contato</h1>
-   {% bootstrap_messages %} <!-- Caso a mensagem não seja enviada por algum
+   {% bootstrap_messages %}  Caso a mensagem não seja enviada por algum
 
-motivo, deixar uma mensagem -->
+motivo, deixar uma mensagem
     <form action="{% url 'contato' %}" method="post" class="form" autocomplete="off">
    {% csrf_token %} <!-- Recurso de segurança do Django. Gera um token diferente
 
-para cada formulário e verifica se ninguém o alterou no meio do caminho -->
-   {% bootstrap_form form %} <!-- O bootstrap será aplicado em nosso form -->
-   {% buttons %} <!-- Cria um botão -->
+para cada formulário e verifica se ninguém o alterou no meio do caminho
+   {% bootstrap_form form %} <!-- O bootstrap será aplicado em nosso form
+   {% buttons %} <!-- Cria um botão
    <button type="submit" class="btn btn-primary"> Enviar Mensagem</button>
    {% endbuttons %}
    </form>
@@ -25,3 +27,92 @@ para cada formulário e verifica se ninguém o alterou no meio do caminho -->
     {% bootstrap_javascript jquery='full' %}
 </body>
 </html>
+-->
+
+ </section>
+    <!-- blog Section End -->
+    <!--
+    Contact Us Section -->
+    <!--
+    <section id="contact" class="section">
+      Container Starts -->
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-text section-header text-center">
+              <div>
+                <h2 class="section-title">Cadastre-se no nosso site</h2>
+                <div class="desc-text">
+                  <p>Fique por dentro das novidades</p>
+                  <p>ou venha nos conhecer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- End Row -->
+        <!-- Start Row -->
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Assunto" id="msg_subject" class="form-control" name="msg_subject" required data-error="Please enter your subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control" id="message"  name="message" placeholder="Mensagem" rows="4" data-error="Write your message" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button">
+                  <button class="btn btn-common" id="submit" type="submit">Enviar</button>
+                  <div id="msgSubmit" class="h3 hidden"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-1">
+
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-12">
+            <div class="contact-img">
+              <img src="{% static 'img/contact/01.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-1">
+          </div>
+          <!-- End Col -->
+
+        </div>
+        <!-- End Row -->
+      </div>
+    </section>
+    </html>
