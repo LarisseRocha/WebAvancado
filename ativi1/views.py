@@ -15,17 +15,17 @@ def contato(request):
 
        if form.is_valid():
 
-         nome = form.cleaned_data['nome']
+         name = form.cleaned_data['name']
          email = form.cleaned_data['email']
-         assunto = form.cleaned_data['assunto']
-         mensagem = form.cleaned_data['mensagem']
+         msg_subject = form.cleaned_data['msg_subject']
+         message = form.cleaned_data['message']
 
          print('Mensagem Enviada')
          messages.success(request, 'E-mail enviado com sucesso')
-         print(f'Nome: {nome}')
+         print(f'Nome: {name}')
          print(f'E-mail: {email}')
-         print(f'Assunto: {assunto}')
-         print(f'Mensagem: {mensagem}')
+         print(f'Assunto: {msg_subject}')
+         print(f'Mensagem: {message}')
          form = ContatoForm()
 
     else:

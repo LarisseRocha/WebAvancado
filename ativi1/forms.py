@@ -2,7 +2,7 @@ from django import forms
 
 
 class ContatoForm(forms.Form):
-    nome = forms.CharField(label='Nome')
-    email = forms.EmailField(label='Email')
-    assunto = forms.CharField(label='Assunto')
-    mensagem = forms.CharField(label='Mensagem', widget=forms.Textarea())
+    name = forms.CharField(label='name')
+    email = forms.EmailField(label='email')
+    msg_subject = forms.CharField(label='assunto')
+    message = forms.CharField(label='message', widget=forms.Textarea())
